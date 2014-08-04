@@ -1,4 +1,4 @@
-package com.test;
+package org.jboss.as.quickstarts.servlet.async.test;
 
 import org.junit.Test;
 
