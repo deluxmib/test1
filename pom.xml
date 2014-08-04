@@ -44,6 +44,13 @@
            <version>1.8.3</version>
        </dependency>
 
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.8.1</version>
+      <scope>test</scope>
+    </dependency>
+
       <!-- Import the CDI API, we use provided scope as the API is included 
          in JBoss AS 7 -->
       <dependency>
@@ -93,6 +100,18 @@
          is deployed -->
       <finalName>jboss-as-servlet-async</finalName>
       <plugins>
+
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.17</version>
+        <configuration>
+          <parallel>methods</parallel>
+          <threadCount>10</threadCount>
+        </configuration>
+      </plugin>
+
          <plugin>
             <artifactId>maven-war-plugin</artifactId>
             <version>2.1.1</version>
