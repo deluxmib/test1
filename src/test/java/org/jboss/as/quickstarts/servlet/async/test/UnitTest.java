@@ -1,4 +1,4 @@
-package org.jboss.as.quickstarts.servlet.async.test;
+package java.org.jboss.as.quickstarts.servlet.async.test;
 
 import org.junit.Test;
 
